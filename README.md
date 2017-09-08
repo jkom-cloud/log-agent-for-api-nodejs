@@ -17,7 +17,7 @@ var agent = require('agent-node')
 
 var app = express()
 
-app.use(agent({name: 'socket'});
+app.use(agent({name: 'socket'}));
 
 app.get('/api', function (req, res) {
   res.send('Hello World!')
