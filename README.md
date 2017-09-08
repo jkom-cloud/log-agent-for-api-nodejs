@@ -13,7 +13,7 @@ npm install jkom-cloud/log-agent-for-api-nodejs --save
 
 ``` js
 var express = require('express')
-var agent = require('log-agent-for-api-nodejs')
+var agent = require('agent-node')
 
 var app = express()
 
