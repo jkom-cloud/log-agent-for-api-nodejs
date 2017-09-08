@@ -16,6 +16,7 @@
   "dependencies": {
     "debug": "^3.0.1",
     "request": "^2.81.0",
+    "body-parser": "^1.17.2",
     "xtend": "^4.0.1"
   },
   "devDependencies": {
