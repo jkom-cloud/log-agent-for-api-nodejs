@@ -12,3 +12,4 @@ app.all('/ping', (req, res) => {
 });
 
 app.listen(9003);
+console.log('listening on', 9003);
