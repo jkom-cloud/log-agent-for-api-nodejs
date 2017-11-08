@@ -33,11 +33,27 @@ if (flag) {
 
 if (!flag) {
   const param = {
-    url: 'http://localhost:9003/ping',
+    url: 'http://42.159.241.116:8080/notification',
     method: 'POST',
     body: {
-      "max": 6.06,
-      "min": 3.76
+      "recipients":[
+        100000002,
+        100000003
+      ],
+      "body":{
+        "timestamp":"2017-09-06 23:10:00",
+        "routing_key":"agent.add.test",
+        "type":"service",
+        "title":" Agent XXX added test report for User XXX ! ",
+        "content":"",
+        "extra":{
+          "spId":1,
+          "userId":123456,
+          "agentId":456789,
+          "testId":54321
+        }
+      },
+      "api_key": "34d2263bad91211d598cad52ddfb88c650b34cd03198466e21b7e9c03f6b7195"
     }
   };
   doRequest(param, (err, result) => {
